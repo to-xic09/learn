@@ -1,45 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Login</title>
-
-  
+    <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="container">
+<div class="container">
+    <form  id = u autocomplete="off">
 
-        <form autocomplete="off" class="login-box ">
+        <h2>Login</h2>
 
-            <h2>Email Login</h2>
-
-   
-            <input type="email" id="email" placeholder="Enter your email" required>
-
-       
-            <input type="password" id="password" placeholder="Enter your password" required>
-
-           
-            <button type="submit">
-                Login
-            </button>
-
-            <p class="extra">
-              this is not valid
-            </p>
-
-        </form>
-
-    </div>
-    <script src="script.js"></script>
+  
+        <div class="input-group">
+            <input type="text" id="email" placeholder="Enter Email">
+            <small class="error" id="emailError">email is incorrect</small>
+        </div>
 
 
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Enter Password">
+            <small class="error" id="passwordError">password is incorrect</small>
+        </div>
+
+        <button type="submit">Login</button>
+        <script src="script.js "></script>
+
+    </form>
+</div>
 
 </body>
-
 </html>
