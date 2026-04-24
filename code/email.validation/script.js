@@ -17,15 +17,23 @@ form.addEventListener("submit", function (dets) {
     let emailValid = emailRegex.test(email.value);
     let passwordValid = passwordRegex.test(password.value);
 
+    let =isvalid = true;
+
 
     if (!emailValid) {
         document.querySelector("#emailError").textContent = "Invalid Email ";
         document.querySelector("#emailError").style.display = "initial";
+        isvalid = false;
     }
 
     if (!passwordValid) {
         document.querySelector("#passwordError").textContent = "invaild password";
        document.querySelector("#passwordError").style.display = "initial";
+       isvalid=false;
+    }
+
+    if(isvalid){
+        document.querySelector("#result").textContent = "log in "
     }
 
 

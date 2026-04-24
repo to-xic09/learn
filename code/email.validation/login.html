@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
-    <form  id = u autocomplete="off">
+    <div class="container">
+        <form id=u autocomplete="off">
 
-        <h2>Login</h2>
-
-  
-        <div class="input-group">
-            <input type="text" id="email" placeholder="Enter Email">
-            <small class="error" id="emailError">email is incorrect</small>
-        </div>
+            <h2>Login</h2>
 
 
-        <div class="input-group">
-            <input type="password" id="password" placeholder="Enter Password">
-            <small class="error" id="passwordError">password is incorrect</small>
-        </div>
+            <div class="input-group">
+                <input type="text" id="email" placeholder="Enter Email">
+                <small class="error" id="emailError">email is incorrect</small>
+            </div>
 
-        <button type="submit">Login</button>
-        <script src="script.js "></script>
 
-    </form>
-</div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Enter Password">
+                <small class="error" id="passwordError">password is incorrect</small>
+            </div>
+
+            <button type="submit">Login</button>
+            <div id="result"></div>
+            <script src="script.js "></script>
+
+        </form>
+    </div>
 
 </body>
+
 </html>
